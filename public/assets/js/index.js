@@ -33,35 +33,3 @@ $( _ => {
 
 });
 
-
-/*
-const paths = {
-    news: 'assets/img/news/',
-}
-const labNews = {
-    allNews: null,
-    selectedNew: 0,
-    allCategories: null,
-    selectedCategory: null
-}
-
-$( _ => {
-
-    getJSON('/api/news/', (err, json) => {
-        labNews.allNews = json;
-        console.log(labNews.allNews);
-        const root = $('.root');
-        render(root);
-    });
-
-    getJSON('/api/categories/', (err, json) => {
-        labNews.allCategories = json;
-        console.log(labNews.allCategories);
-    });
-
-    getJSON('/api/news/' + labNews.selectedNew, (err, json) => {
-        labNews.selectedNew = json;
-        console.log(labNews.selectedNew);
-    });
-*/
-
