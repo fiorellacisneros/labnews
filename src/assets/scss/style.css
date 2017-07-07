@@ -1,3 +1,4 @@
+/* HEADER */
 header {
   padding-bottom: 5px;
   border-bottom: 1px solid black; }
@@ -8,13 +9,28 @@ header {
   .cont__options img {
     margin-right: 8px; }
   .cont__options span {
-    margin-right: 19px; }
+    margin-right: 14px; }
 
 .cont__social {
   display: inline-block;
   padding: 6px; }
   .cont__social img {
     padding-right: 10px; }
+
+/* PORTADA */
+.portada {
+  text-align: center;
+  padding: 24px; }
+  .portada img:first-child {
+    width: 50%; }
+  .portada .portada__info {
+    padding: 15px; }
+    .portada .portada__info p {
+      display: inline-block;
+      margin-right: 20px; }
+    .portada .portada__info img {
+      margin-left: 20px;
+      margin-right: 2px; }
 
 /* UTILITIES */
 .fl-right {

@@ -3,8 +3,9 @@
 const render = (root) => {
     root.empty();
     const wrapper = $('<div class="wrapper"></div>');
-    //wrapper.append(Header());
-    wrapper.append(state.url(_ => render(root))); 
+    wrapper.append(Header());
+    wrapper.append(Portada());
+    //wrapper.append(state.url(_ => render(root))); 
 
     root.append(wrapper);
 };
