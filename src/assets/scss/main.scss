@@ -1,0 +1,25 @@
+header{
+    padding-bottom: 5px;
+    border-bottom: 1px solid black;
+}
+.cont__options{
+    display: inline-block;
+    padding: 6px;
+    & img{
+        margin-right: 8px;
+    }
+    & span{
+        margin-right: 19px;
+    }
+}
+.cont__social{
+    display: inline-block;
+    padding: 6px;
+    & img{
+        padding-right: 10px;
+    }
+}
+/* UTILITIES */
+.fl-right{
+    float: right;
+}
