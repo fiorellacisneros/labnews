@@ -59,6 +59,9 @@ header{
 @media (max-width: 768px){
     .cont-nav nav{
         background-color: $white;
+        & .navbar-nav li > a{
+            color: $black;
+        }
     }
 }
 /* UTILITIES */
