@@ -12,10 +12,25 @@ const render = (root) => {
 };
 
 const state = {
-    url: Header
+    allNews: null
 };
 
-$( _ => {
-    const root = $('.root');
-    render(root);
+( _ => {
+    getJSON('/api/news/', (err, json) => {
+        labnews.allNews = json;
+        console.log(labnews.allNews);
+    });
 });
+
+var getJSON = (url, cb) => {
+    var xhr = new XMLHttpRequest();
+    xhr.addEventListener('load', () => {
+        if (xhr.status !== 200) {
+            return cb(new Error('Error loading JSON from ' + url + '(' + xhr.status + ')'));
+        } cb(null, xhr.response);
+    });
+
+    xhr.open('GET', url);
+    xhr.responseType = 'json';
+    xhr.send();
+};
