@@ -1,8 +1,14 @@
+@import "font";
+@import "colors";
+
+*{
+    font-family: $font-body;
+}
 $inline-block : inline-block;
 /* HEADER */
 header{
     padding-bottom: 5px;
-    border-bottom: 1px solid black;
+    border-bottom: 2px solid $black;
 }
 .cont__options{
     display: $inline-block;
@@ -24,9 +30,9 @@ header{
 /* PORTADA */
 .portada{
     text-align: center;
-    padding: 24px;
+    padding: 20px;
     & img:first-child{
-        width: 50%;
+        width: 30%;
     }
     & .portada__info{
         padding: 15px;
@@ -38,6 +44,21 @@ header{
             margin-left: 20px;
             margin-right: 2px;
         }
+    }
+}
+/* NAVBAR */
+.cont-nav{
+    max-width: 843px;
+    & nav{
+        background-color: $yellow;
+        & .navbar-nav li > a{
+            color: $white;
+        }
+    }
+}
+@media (max-width: 768px){
+    .cont-nav nav{
+        background-color: $white;
     }
 }
 /* UTILITIES */
