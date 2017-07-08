@@ -71,6 +71,9 @@ header{
 .pd-top-20{
     padding-top: 20px;
 }
+.pd-bt-12{
+    padding-bottom: 12px;
+}
 /*NEW PORTADA */
 .newportada{
     & img{
@@ -114,4 +117,23 @@ hr{
 footer{
     background-color: $yellow;
     padding: 20px;
+    & .footer__left{
+        padding: 28px;
+        & p{
+            color: $white;
+        }
+        img{
+            padding-bottom: 20px;
+        }
+    }
+    & .footer__center ul li{
+        color: $white;
+        list-style: none;
+        line-height: 18px;
+    }
+    & .footer__right ul li{
+        color: $white;
+        list-style: none;
+        line-height: 20px;
+    }
 }
