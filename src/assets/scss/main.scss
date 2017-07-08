@@ -68,6 +68,9 @@ header{
 .fl-right{
     float: right;
 }
+.pd-top-20{
+    padding-top: 20px;
+}
 /*NEW PORTADA */
 .newportada{
     & img{
@@ -87,4 +90,28 @@ header{
         max-width: 500px;
         color: $white;
     }
+}
+.newsfav{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    & .newsfav__info{
+        background-color: $black;
+        padding: 9px;
+        color: $white;
+    }
+    & .newsfav__info1{
+        background-color: $black;
+        padding: 17px;
+        color: $white;
+    }
+}
+hr{
+    width: 100px;
+    float: left;
+    border-top: 2px solid $yellow;
+    margin: 0;
+}
+footer{
+    background-color: $yellow;
+    padding: 20px;
 }
