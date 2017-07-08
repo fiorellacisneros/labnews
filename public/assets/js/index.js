@@ -9,6 +9,7 @@ const render = (root) => {
     wrapper.append(newPortada());
     wrapper.append(principalNews());
     wrapper.append(Mundo());
+    wrapper.append(moreMundo());
     wrapper.append(Footer());
     //wrapper.append(state.url(_ => render(root))); 
 
